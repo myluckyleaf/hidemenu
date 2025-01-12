@@ -1,0 +1,13 @@
+// Select the sidebar element
+const sidebar = document.getElementById('sidebar');
+
+// Select all links inside the sidebar
+const sidebarLinks = sidebar.querySelectorAll('a');
+
+// Add a click event listener to each link
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Hide the sidebar by adding a class or modifying its style
+    sidebar.style.display = 'none';
+  });
+});
